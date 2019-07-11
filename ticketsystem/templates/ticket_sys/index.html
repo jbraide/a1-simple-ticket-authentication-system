@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="ticket-id">
+    <div class="container">
+        <div class="text-center">
+            <h3>Ticket ID</h3>
+            <small>Input your 10 Digit Key</small>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <form action="/login_view" method="POST">
+                        <p>
+                            <label for="id_username">Username:</label>
+                            <input type="text" class="form-control" name='username' maxlength='100' required>
+                        </p>
+
+                        <p>
+                            <label for="id_password">Password:</label>
+                            <input type="password" class="form-control">
+                        </p>
+
+                    </form>
+
+                </div>
+                <div class="text-center">
+                    <input type="submit" value="Login" class="btn btn-primary">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

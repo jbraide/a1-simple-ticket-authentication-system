@@ -1,0 +1,41 @@
+#logo-img{
+    height: 30px;
+    width: 30px;
+    padding: 3px 0 3px 0;
+}
+
+.ticket-id{
+    padding: 70px 0;
+    line-height: 50px;
+}
+
+footer{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    height: 85px;    
+}
+
+.footer-center{
+    padding: 20px 0;
+}
+
+
+/* colors */
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+    line-height: 10px;
+}
+
+/* changing buttons  */
+.btn-primary{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    border-radius: 0px;
+    padding: 10px 20px;
+}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="container">
+    <div class="text-center">
+        <form action="{% url 'ticketsystem:create_ticket' %}" method="POST">
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="Generate">
+        </form>
+    </div>
+
+    <table class=" table table-bordered">
+
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Ticket ID</th>
+                <th>Duration</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        {% for t in ticket %}
+        <tbody>
+            <td>{{ t.id }}</td>
+            <td>{{ t.username }}</td>
+            <td>1 Hr</td>
+            <td class="green">Active</td>
+        </tbody>
+        {% endfor %}
+    </table>
+</div>
+
+
+
+{% endblock %}
